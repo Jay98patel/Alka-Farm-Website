@@ -1,11 +1,11 @@
-// let name="JAY"
-// let text = `Hello ${name}, Welcome to the Magic World `;
-// const speech = new SpeechSynthesisUtterance(text);
-// speech.volume = 10;
-// speech.rate = 0.5;
-// speech.pitch = 1;
-// // console.log(speech)
-// window.speechSynthesis.speak(speech);
+/* let name="JAY"
+let text = `Hello ${name}, Welcome to the Magic World `;
+const speech = new SpeechSynthesisUtterance(text);
+speech.volume = 10;
+speech.rate = 0.5;
+speech.pitch = 1;
+// console.log(speech)
+window.speechSynthesis.speak(speech); */
 
 //menu toggle 
 const showMenu = (toggleId, navId) =>{
