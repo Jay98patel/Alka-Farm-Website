@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"live-server"
   },
   "author": "Jay Patel",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "live-server": "^1.2.1"
   }
 }

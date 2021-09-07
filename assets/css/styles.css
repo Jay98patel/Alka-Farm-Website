@@ -2,6 +2,7 @@
 :root {
   --header-height: 3rem;
   --primary-color: #069c54;
+  --primary-color-alt: #007a3f;
   --title-color: #3d3d3d;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
@@ -93,7 +94,7 @@ img {
 
 .bd-container {
   max-width: 960px;
-  width: calc(100%-2rem);
+  width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -139,16 +140,16 @@ img {
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  color: var(--primary-color);
 }
 
 .nav__link {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: var(--primary-color);
 }
 
 .nav__toggle {
@@ -161,6 +162,92 @@ img {
   top: var(--header-height) !important;
 }
 
+.active-link {
+  color: var(--primary-color);
+}
+
+/* Change background header */
+.scroll-header {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+  background: rgba(6, 156, 84, 0.5);
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon {
+  font-size: 1.8rem;
+  color: var(--body-color);
+}
+
+/* Show scrolltop */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+.home__container {
+  height: calc(100vh - var(--header-height));
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  color: var(--primary-color);
+  margin-bottom: var(--mb-1);
+}
+
+.home__subtitle {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-4);
+}
+
+.home__img {
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--primary-color-alt);
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -170,8 +257,8 @@ img {
     padding: 1.5rem 0 1rem;
     text-align: center;
     background-color: var(--body-color);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     -webkit-box-shadow: 0 4px 4px rgba(39, 39, 39, 0.1);
             box-shadow: 0 4px 4px rgba(39, 39, 39, 0.1);
     border-radius: 0 0 1rem 1rem;
