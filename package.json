@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "live-server"
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jay Patel",
   "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "live-server": "^1.2.1"

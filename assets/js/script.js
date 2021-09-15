@@ -1,11 +1,7 @@
-/* let name="JAY"
-let text = `Hello ${name}, Welcome to the Magic World `;
-const speech = new SpeechSynthesisUtterance(text);
-speech.volume = 10;
-speech.rate = 0.5;
-speech.pitch = 1;
-// console.log(speech)
-window.speechSynthesis.speak(speech); */
+/* import lightGallery from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.3";
+
+import lgZoom from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.3/plugins/zoom"; */
+
 
 new Splide( '.splide', {
     rewind:true,
@@ -21,6 +17,14 @@ new Splide( '.splide', {
 		},
 	}
 } ).mount();
+
+lightGallery(document.getElementById('aniimated-thumbnials'), {
+    thumbnail:false,
+    mode: 'lg-fade',
+    animateThumb: true,
+    showThumbByDefault: false,
+    speed: 500,
+}); 
 
 //menu toggle 
 const showMenu = (toggleId, navId) => {
