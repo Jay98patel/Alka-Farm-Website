@@ -263,6 +263,37 @@ img {
       justify-self: center;
 }
 
+.splide {
+  height: 400px;
+}
+
+.splide__track {
+  height: 100%;
+}
+
+.splide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service__title {
+  padding: 10px;
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description {
+  padding: 10px;
+}
+
+.splide__slide {
+  height: 380px;
+  -webkit-box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;

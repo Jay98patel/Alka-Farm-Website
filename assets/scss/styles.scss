@@ -207,7 +207,7 @@ img {
     visibility: visible;
     bottom: 1.5rem;
 }
-// Home Section
+// Home Section\\\\\\\\\\\\\\\\\
 
 .home__container {
     height: calc(100vh - var(--header-height));
@@ -246,7 +246,8 @@ img {
 
 // Home Section ends
 
-//About us
+//About us Section\\\\\\\\\\\\\\\\\
+
 .about__data {
     text-align: center;
 }
@@ -260,8 +261,39 @@ img {
     border-radius: 0.5rem;
     justify-self: center;
 }
-
 //About us end
+
+//Service Section\\\\\\\\\\\\\\
+
+.splide {
+    height: 400px;
+}
+
+.splide__track {
+    height: 100%;
+}
+
+.splide__list {
+    display: flex;
+}
+
+.service__title {
+    padding: 10px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services__description {
+    padding: 10px;
+}
+
+.splide__slide {
+    height: 380px;
+    box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+}
+
+//Service Section ends\\\\\\\\\\\\\\
 
 //for nav
 @media screen and (max-width: 768px) {

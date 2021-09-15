@@ -9,6 +9,9 @@
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 
+    <!-- splider Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Alka Farm</title>
@@ -31,7 +34,7 @@
                         <a href="#about" class="nav__link">About us</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#service" class="nav__link">Service</a>
+                        <a href="#service" class="nav__link">Services</a>
                     </li>
                     <li class="nav__item">
                         <a href="#gallery" class="nav__link">Gallery</a>
@@ -68,6 +71,7 @@
             </div>
         </section>
         <!-- ===================Home Ends=================== -->
+
         <!-- ===================About us=================== -->
         <section class="about section bd-container" id="about">
             <div class="about__container bd-grid">
@@ -79,18 +83,70 @@
                         Sustainable Gardening<br>Where the Green Grass Grows
                     </h2>
                     <p class="about__description">
-                        We are a family-owned and operated farm headquartered in Bilimora, Navsari, Gujarat. In the early 1960s, our founder, John partnered with his father to grow Farm. In 2018, the company renamed its farming operations "Alka Farms."<br>
-                        We have more than 1 lakhs of different types of plants. 
-                        As a family business, Alka Farms remains driven by integrity and humility, using them as the foundation for all of its operations. 
+                        We are a family-owned and operated farm headquartered in Bilimora, Navsari, Gujarat. In the
+                        early 1960s, our founder, John partnered with his father to grow Farm. In 2018, the company
+                        renamed its farming operations "Alka Farms."<br>
+                        We have more than 1 lakhs of different types of plants.
+                        As a family business, Alka Farms remains driven by integrity and humility, using them as the
+                        foundation for all of its operations.
                     </p>
-                    <img src="assets/images/aboutus.jpg" class="about__img" alt="about us" >
+                    <img src="assets/images/aboutus.jpg" class="about__img" alt="about us">
                 </div>
             </div>
         </section>
         <!-- ===================About us=================== -->
+
+        <!-- ===================Service=================== -->
+        <section class="services section bd-container" id="service">
+            <span class="section-subtitle">
+                Services
+            </span>
+            <h2 class="section-title">
+                Does your soil have what it takes?
+            </h2>
+           <!--  <div class="services__container bd-grid">
+                <div class="services__content"> -->
+                    <div class="splide">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <img src="assets/images/Growing Microgreens.jpg" alt="" srcset="">
+                                    <h3 class="service__title">
+                                        Growing Microgreens 
+                                    </h3>
+                                    <p class="services__description">
+                                        Microgreens are the stage a plant goes through after they’re a sprout, but before they become a baby green and start to grow into a full-sized vegetable.
+                                    </p>
+                                </div>
+                                <div class="splide__slide">
+                                    <img src="assets/images/Permaculture.jpg" alt="" srcset="">
+                                    <h3 class="service__title">
+                                        Permaculture
+                                    </h3>
+                                    <p class="services__description">
+                                        Permaculture farming is a method of agriculture that’s based on sustainability.
+                                    </p>
+                                </div>
+                                <div class="splide__slide">
+                                    <img src="assets/images/Hydroponics.jpg" alt="" srcset="">
+                                    <h3 class="service__title">
+                                        Hydroponics
+                                    </h3>
+                                    <p class="services__description">
+                                        Hydroponics is just aquaponics, but without the fish or other aquatic creatures!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                   <!--  </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- ===================Service ends=================== -->
     </main>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 <script src="assets/js/script.js"></script>
 
 </html>

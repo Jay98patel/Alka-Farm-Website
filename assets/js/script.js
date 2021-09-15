@@ -7,6 +7,21 @@ speech.pitch = 1;
 // console.log(speech)
 window.speechSynthesis.speak(speech); */
 
+new Splide( '.splide', {
+    rewind:true,
+	perPage: 3,
+	breakpoints: {
+		'640': {
+			perPage: 2,
+			gap    : '1rem',
+		},
+		'480': {
+			perPage: 1,
+			gap    : '1rem',
+		},
+	}
+} ).mount();
+
 //menu toggle 
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -38,19 +53,19 @@ navLink.forEach(n => {
 
 
 //==================== SCROLL SECTIONS ACTIVE LINK ====================
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id');
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -65,13 +80,13 @@ function scrollHeader() {
 
 }
 
-window.addEventListener('scroll',scrollHeader)
+window.addEventListener('scroll', scrollHeader)
 
 
-/*==================== SHOW SCROLL TOP ====================*/ 
-function scrollTop(){
+/*==================== SHOW SCROLL TOP ====================*/
+function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
-    if(this.scrollY >= 220) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 220) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
