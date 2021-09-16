@@ -317,9 +317,19 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-
-
 //Gallery Section ends\\\\\\\\\\\\\\
+
+//Contact Section\\\\\\\\\\\\\\
+
+.contact__container{
+    text-align: center;
+}
+
+.contact__description{
+    margin-bottom: var(--mb-3);
+}
+
+//Contact Section ends\\\\\\\\\\\\\\
 
 //for nav
 @media screen and (max-width: 768px) {

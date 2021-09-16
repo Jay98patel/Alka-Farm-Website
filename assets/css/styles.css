@@ -326,6 +326,14 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.contact__container {
+  text-align: center;
+}
+
+.contact__description {
+  margin-bottom: var(--mb-3);
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
